@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZAVLO Technologies — Connected Healthcare Infrastructure</title>
+  <meta name="description" content="ZAVLO Technologies — Next-generation autonomous healthcare logistics, smart infrastructure, and decentralized care ecosystem. Innovation today for a healthier tomorrow.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://zavlo.com/">
+  <link rel="stylesheet" href="src/css/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+  <!-- Ambient background void -->
+  <div class="background-void" aria-hidden="true">
+    <div class="void-bloom"></div>
+    <div class="void-bloom secondary"></div>
+  </div>
+
+  <!-- Pointer-reactive ambient light (desktop only, injected by JS) -->
+  <div class="pointer-light" id="pointer-light" aria-hidden="true"></div>
+
+  <!-- Navigation -->
+  <header class="site-header" id="site-header">
+    <nav class="nav-container" aria-label="Main Navigation">
+      <a href="#hero" class="nav-logo" aria-label="ZAVLO Technologies Home">
+        <div class="logo-mark">
+          <svg width="28" height="28" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 25 H80 L35 75 H80" stroke="url(#logo-grad)" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="78" cy="32" r="7" fill="#00F0B5" />
+            <defs>
+              <linearGradient id="logo-grad" x1="20" y1="25" x2="80" y2="75" gradientUnits="userSpaceOnUse">
+                <stop offset="0%" stop-color="#00A3FF"/>
+                <stop offset="100%" stop-color="#00F0B5"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <span class="logo-text">ZAVLO</span>
+      </a>
+
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#ecosystem" class="nav-link">Ecosystem</a></li>
+        <li><a href="#logistics" class="nav-link">Logistics</a></li>
+        <li><a href="#infrastructure" class="nav-link">Infrastructure</a></li>
+        <li><a href="#digital" class="nav-link">Platform</a></li>
+        <li><a href="#technology" class="nav-link">Engineering</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-nav">Contact</a>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Navigation Menu" aria-expanded="false" aria-controls="nav-menu">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ============================================================
+         SECTION 1: HERO (Stage 2 Preserved)
+         ============================================================ -->
+    <section class="hero-section" id="hero">
+      <div id="webgl-container" class="webgl-container" aria-label="Interactive 3D ZAVLO Emblem" role="img">
+        <canvas id="hero-webgl-canvas"></canvas>
+      </div>
+
+      <div class="hero-overlay">
+        <div class="hero-content">
+          <h1 class="hero-brand">
+            <span class="wordmark-zavlo">Z<span class="dot-a">A</span>VLO</span>
+            <span class="wordmark-subtitle">TECHNOLOGIES</span>
+          </h1>
+          <p class="hero-tagline">Innovation Today for a Healthier Tomorrow</p>
+          <div class="hero-cta-group">
+            <a href="#mission" class="btn btn-primary">
+              <span class="btn-text">EXPLORE ZAVLO</span>
+              <span class="btn-glow" aria-hidden="true"></span>
+            </a>
+            <a href="#technology" class="btn btn-secondary">DISCOVER THE TECHNOLOGY</a>
+          </div>
+        </div>
+
+        <div class="scroll-indicator" aria-hidden="true">
+          <span class="scroll-text">SCROLL TO EXPLORE</span>
+          <div class="scroll-line"><div class="scroll-dot"></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 2: MISSION
+         ============================================================ -->
+    <section class="mission-section reveal-on-scroll" id="mission">
+      <div class="section-glow" aria-hidden="true"></div>
+      <div class="section-container">
+        <div class="mission-wrapper">
+          <span class="section-badge">ZAVLO MISSION</span>
+          <h2 class="mission-headline">Healthcare should move at the speed of life.</h2>
+          <div class="mission-divider"></div>
+          <p class="mission-body">
+            ZAVLO Technologies is building connected healthcare infrastructure that brings intelligent logistics, smart medical stations, and digital health systems together into one seamless ecosystem.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider" aria-hidden="true"></div>
+
+    <!-- ============================================================
+         SECTION 3: ECOSYSTEM
+         ============================================================ -->
+    <section class="ecosystem-section reveal-on-scroll" id="ecosystem">
+      <div class="section-container">
+        <div class="section-header center">
+          <span class="section-badge">THE ZAVLO ECOSYSTEM</span>
+          <h2 class="section-title">Connected infrastructure.<br>One healthcare network.</h2>
+          <p class="section-subtitle">
+            A unified architecture bridging rapid delivery, physical point-of-care, and real-time diagnostics.
+          </p>
+        </div>
+
+        <div class="ecosystem-grid">
+          <article class="ecosystem-card stagger-child">
+            <div class="card-number">01</div>
+            <div class="card-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+              </svg>
+            </div>
+            <h3 class="card-title">AUTONOMOUS LOGISTICS</h3>
+            <p class="card-description">Medical delivery systems engineered for rapid payload transport across rural and urban environments.</p>
+            <a href="#logistics" class="card-link">Explore &rarr;</a>
+          </article>
+
+          <article class="ecosystem-card stagger-child">
+            <div class="card-number">02</div>
+            <div class="card-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="4" y="2" width="16" height="20" rx="2" ry="2"/>
+                <circle cx="12" cy="14" r="3"/>
+                <path d="M12 6h.01"/>
+              </svg>
+            </div>
+            <h3 class="card-title">SMART STATIONS</h3>
+            <p class="card-description">Autonomous healthcare stations designed for instant access, remote consultation, and emergency response.</p>
+            <a href="#infrastructure" class="card-link">Explore &rarr;</a>
+          </article>
+
+          <article class="ecosystem-card stagger-child">
+            <div class="card-number">03</div>
+            <div class="card-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                <line x1="8" y1="21" x2="16" y2="21"/>
+                <line x1="12" y1="17" x2="12" y2="21"/>
+              </svg>
+            </div>
+            <h3 class="card-title">DIGITAL HEALTH</h3>
+            <p class="card-description">Software interfaces connecting patients, providers, telemetry dashboards, and autonomous infrastructure.</p>
+            <a href="#digital" class="card-link">Explore &rarr;</a>
+          </article>
+
+          <article class="ecosystem-card stagger-child">
+            <div class="card-number">04</div>
+            <div class="card-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <circle cx="12" cy="12" r="10"/>
+                <line x1="2" y1="12" x2="22" y2="12"/>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+              </svg>
+            </div>
+            <h3 class="card-title">INTELLIGENT INFRASTRUCTURE</h3>
+            <p class="card-description">Telemetry, solar-assisted power, and encrypted communication unifying the complete ecosystem.</p>
+            <a href="#technology" class="card-link">Explore &rarr;</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 4: AUTONOMOUS LOGISTICS
+         ============================================================ -->
+    <section class="product-section reveal-on-scroll" id="logistics">
+      <div class="section-container">
+        <div class="product-grid">
+          <div class="product-visual">
+            <div class="image-frame">
+              <img src="src/assets/images/drone-tech.png" alt="ZAVLO Autonomous Medical Delivery Drone" loading="lazy" class="product-img">
+              <div class="frame-overlay"></div>
+              <div class="frame-badge">LOGISTICS HARDWARE</div>
+            </div>
+          </div>
+
+          <div class="product-content">
+            <span class="section-badge">AUTONOMOUS LOGISTICS</span>
+            <h2 class="section-title">Medical care shouldn't wait for distance.</h2>
+            <p class="section-description">
+              ZAVLO's autonomous logistics systems move critical medical supplies quickly, efficiently, and reliably — engineered with solar-assisted charging, encrypted communication, and high-precision navigation.
+            </p>
+
+            <div class="feature-pills">
+              <div class="pill">
+                <span class="pill-title">AUTONOMOUS NAVIGATION</span>
+                <span class="pill-desc">Vision + AI obstacle detection</span>
+              </div>
+              <div class="pill">
+                <span class="pill-title">PRECISION DELIVERY</span>
+                <span class="pill-desc">RTK GPS high-accuracy positioning</span>
+              </div>
+              <div class="pill">
+                <span class="pill-title">REAL-TIME MONITORING</span>
+                <span class="pill-desc">Encrypted 4G/5G live telemetry</span>
+              </div>
+              <div class="pill">
+                <span class="pill-title">MODULAR PAYLOAD</span>
+                <span class="pill-desc">2°C – 8°C temperature-controlled</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 5: SMART HEALTHCARE STATIONS
+         ============================================================ -->
+    <section class="product-section reverse reveal-on-scroll" id="infrastructure">
+      <div class="section-container">
+        <div class="product-grid">
+          <div class="product-content">
+            <span class="section-badge">SMART INFRASTRUCTURE</span>
+            <h2 class="section-title">Healthcare access, closer to where people live.</h2>
+            <p class="section-description">
+              ZAVLO Smart Stations deliver round-the-clock access to certified consultation, automated prescription verification, and climate-controlled medicine storage — powered by sustainable solar energy.
+            </p>
+
+            <div class="specs-grid">
+              <div class="spec-item">
+                <span class="spec-label">CONNECTED</span>
+                <span class="spec-val">Real-time Telemedicine</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">ACCESSIBLE</span>
+                <span class="spec-val">24/7 Neighborhood Access</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">INTELLIGENT</span>
+                <span class="spec-val">Automated Prescriptions</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">SCALABLE</span>
+                <span class="spec-val">Solar-Powered Grid</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-visual">
+            <div class="image-frame">
+              <img src="src/assets/images/smart-station.png" alt="ZAVLO Smart Healthcare Station" loading="lazy" class="product-img">
+              <div class="frame-overlay"></div>
+              <div class="frame-badge">POINT OF CARE</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 6: DIGITAL HEALTH
+         ============================================================ -->
+    <section class="digital-section reveal-on-scroll" id="digital">
+      <div class="section-container">
+        <div class="section-header center">
+          <span class="section-badge">DIGITAL HEALTH</span>
+          <h2 class="section-title">One connected experience across the healthcare network.</h2>
+          <p class="section-subtitle">
+            The ZAVLO Digital Platform unifies mobile patient interfaces, physician dashboards, and infrastructure telemetry.
+          </p>
+        </div>
+
+        <div class="platform-showcase">
+          <div class="showcase-frame">
+            <img src="src/assets/images/digital-platform.png" alt="ZAVLO Digital Healthcare Platform" loading="lazy" class="showcase-img">
+            <div class="showcase-overlay"></div>
+          </div>
+
+          <div class="platform-tabs">
+            <div class="tab-card active" data-tab="patient">
+              <h4 class="tab-title">Patient Mobile App</h4>
+              <p class="tab-desc">Direct tele-consultations, medicine ordering, and personal metric tracking.</p>
+            </div>
+            <div class="tab-card" data-tab="provider">
+              <h4 class="tab-title">Provider Dashboard</h4>
+              <p class="tab-desc">Clinical decision support, patient analytics, and remote health insights.</p>
+            </div>
+            <div class="tab-card" data-tab="logistics">
+              <h4 class="tab-title">Infrastructure Network</h4>
+              <p class="tab-desc">Live dispatch tracking for drones and smart neighborhood stations.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 7: ENGINEERING
+         ============================================================ -->
+    <section class="engineering-section reveal-on-scroll" id="technology">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-badge">ENGINEERED FOR THE REAL WORLD</span>
+          <h2 class="section-title">Technology designed around reliability.</h2>
+          <p class="section-subtitle">
+            Built for high availability, environmental resilience, and secure telemetry.
+          </p>
+        </div>
+
+        <div class="tech-columns">
+          <div class="tech-card stagger-child">
+            <div class="tech-header">
+              <div class="tech-dot"></div>
+              <h3>AUTONOMOUS SYSTEMS</h3>
+            </div>
+            <p>Intelligent 360° obstacle detection, RTK positioning, and fail-safe return protocols.</p>
+            <ul class="tech-list">
+              <li>Computer Vision Tracking</li>
+              <li>Dual GPS / RTK Redundancy</li>
+              <li>Autonomous Weather Adaptability</li>
+            </ul>
+          </div>
+
+          <div class="tech-card stagger-child">
+            <div class="tech-header">
+              <div class="tech-dot"></div>
+              <h3>CONNECTED DEVICES</h3>
+            </div>
+            <p>Robotic dispensers, biometric locks, and temperature-controlled storage chambers.</p>
+            <ul class="tech-list">
+              <li>Solar-Assisted Power Roof</li>
+              <li>2°C – 8°C Biometric Compartments</li>
+              <li>HD Tele-Consultation Terminals</li>
+            </ul>
+          </div>
+
+          <div class="tech-card stagger-child">
+            <div class="tech-header">
+              <div class="tech-dot"></div>
+              <h3>DIGITAL PLATFORM</h3>
+            </div>
+            <p>Encrypted data flow connecting patients, doctors, drones, and stations.</p>
+            <ul class="tech-list">
+              <li>Encrypted 4G/5G Telemetry</li>
+              <li>Predictive Health AI Insights</li>
+              <li>Multi-Channel Patient Access</li>
+            </ul>
+          </div>
+
+          <div class="tech-card stagger-child">
+            <div class="tech-header">
+              <div class="tech-dot"></div>
+              <h3>DATA INFRASTRUCTURE</h3>
+            </div>
+            <p>Resilient cloud backend and edge processing across the entire network.</p>
+            <ul class="tech-list">
+              <li>Edge Diagnostics Processing</li>
+              <li>Real-time Supply Chain Sync</li>
+              <li>High-Availability Network Grid</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 8: VISION
+         ============================================================ -->
+    <section class="vision-section reveal-on-scroll" id="vision">
+      <div class="vision-bg-glow" aria-hidden="true"></div>
+      <!-- Subtle Z watermark -->
+      <svg class="vision-z-mark" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M15 20 H85 L25 80 H85" stroke="white" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <div class="section-container">
+        <div class="vision-wrapper">
+          <span class="section-badge">ZAVLO VISION</span>
+          <h2 class="vision-title">Innovation today for a healthier tomorrow.</h2>
+          <p class="vision-body">
+            Building a more connected healthcare future through intelligent infrastructure, autonomous systems, and digital technology.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 9: CONTACT & ENQUIRY
+         ============================================================ -->
+    <section class="contact-section reveal-on-scroll" id="contact">
+      <div class="section-container">
+        <div class="contact-grid">
+          <div class="contact-info">
+            <span class="section-badge">CONNECT WITH ZAVLO</span>
+            <h2 class="section-title">Let's build the next layer of healthcare infrastructure.</h2>
+            <p class="section-description">
+              Whether you represent a municipal health system, rural community network, or technology partner, get in touch to explore deployment opportunities.
+            </p>
+
+            <div class="inquiry-categories">
+              <div class="cat-tag">DEPLOYMENT</div>
+              <div class="cat-tag">PARTNERSHIPS</div>
+              <div class="cat-tag">TECHNOLOGY</div>
+              <div class="cat-tag">GENERAL INQUIRIES</div>
+            </div>
+
+            <div class="contact-direct">
+              <a href="mailto:zavlotechnologies1223@gmail.com" class="contact-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4L12 13 2 4"/></svg>
+                zavlotechnologies1223@gmail.com
+              </a>
+              <a href="https://www.instagram.com/zavlocare/" class="contact-link" target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+                @zavlocare
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-form-container">
+            <form id="contact-form" class="contact-form" novalidate>
+              <div class="form-group">
+                <label for="form-name">Full Name</label>
+                <input type="text" id="form-name" name="name" placeholder="Dr. Elena Rostova" required>
+              </div>
+              <div class="form-group">
+                <label for="form-org">Organization</label>
+                <input type="text" id="form-org" name="organization" placeholder="Global Health Network" required>
+              </div>
+              <div class="form-group">
+                <label for="form-email">Email Address</label>
+                <input type="email" id="form-email" name="email" placeholder="elena@healthnetwork.org" required>
+              </div>
+              <div class="form-group">
+                <label for="form-inquiry">Inquiry Type</label>
+                <select id="form-inquiry" name="inquiry">
+                  <option value="deployment">System Deployment</option>
+                  <option value="partnership">Partnership & Integration</option>
+                  <option value="technology">Technology Specification</option>
+                  <option value="general">General Inquiry</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="form-message">Message</label>
+                <textarea id="form-message" name="message" rows="4" placeholder="Tell us about your infrastructure requirements..." required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-submit">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm0 18.15c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.14 8.14 0 0 1-1.25-4.38c0-4.54 3.7-8.24 8.24-8.24 2.2 0 4.27.86 5.82 2.42a8.177 8.177 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.23 8.23zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43s-.56-1.34-.76-1.84c-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.84-.86 2.05s.88 2.38 1 2.54c.12.17 1.73 2.64 4.2 3.7.59.25 1.05.4 1.41.51.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.06-.11-.22-.17-.47-.3z"/>
+                </svg>
+                <span class="btn-text">START A CONVERSATION</span>
+                <span class="btn-glow" aria-hidden="true"></span>
+              </button>
+            </form>
+
+            <div id="form-success-state" class="form-success-state" aria-hidden="true">
+              <div class="success-icon">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#00F0B5" stroke-width="2">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                  <polyline points="22 4 12 14.01 9 11.01"/>
+                </svg>
+              </div>
+              <h3>Inquiry Prepared</h3>
+              <p>WhatsApp will open with your pre-formatted message ready to send directly to our team.</p>
+              <button type="button" id="form-reset-btn" class="btn btn-secondary">Send Another Message</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <a href="#hero" class="footer-logo">
+          <svg width="22" height="22" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 25 H80 L35 75 H80" stroke="url(#f-logo)" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="78" cy="32" r="7" fill="#00F0B5" />
+            <defs>
+              <linearGradient id="f-logo" x1="20" y1="25" x2="80" y2="75" gradientUnits="userSpaceOnUse">
+                <stop offset="0%" stop-color="#00A3FF"/>
+                <stop offset="100%" stop-color="#00F0B5"/>
+              </linearGradient>
+            </defs>
+          </svg>
+          <span class="footer-title">ZAVLO TECHNOLOGIES</span>
+        </a>
+        <p class="footer-tagline">Innovation Today for a Healthier Tomorrow</p>
+      </div>
+
+      <div class="footer-column">
+        <h4 class="footer-col-title">Navigation</h4>
+        <ul class="footer-links">
+          <li><a href="#ecosystem">Ecosystem</a></li>
+          <li><a href="#logistics">Logistics</a></li>
+          <li><a href="#infrastructure">Infrastructure</a></li>
+          <li><a href="#digital">Platform</a></li>
+          <li><a href="#technology">Engineering</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4 class="footer-col-title">Legal</h4>
+        <ul class="footer-links">
+          <li><a href="privacy-policy">Privacy Policy</a></li>
+          <li><a href="terms-and-conditions">Terms & Conditions</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4 class="footer-col-title">Connect</h4>
+        <ul class="footer-links">
+          <li><a href="mailto:zavlotechnologies1223@gmail.com">Email Us</a></li>
+          <li>
+            <div class="footer-social-row">
+              <a href="mailto:zavlotechnologies1223@gmail.com" aria-label="Email ZAVLO">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4L12 13 2 4"/></svg>
+              </a>
+              <a href="https://www.instagram.com/zavlocare/" target="_blank" rel="noopener noreferrer" aria-label="ZAVLO on Instagram">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 ZAVLO Technologies. All rights reserved.</p>
+        <p><a href="#hero">Back to Top &uarr;</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="src/js/webgl-hero.js"></script>
+  <script src="src/js/main.js"></script>
+</body>
+</html>
