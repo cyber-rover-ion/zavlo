@@ -1,10 +1,12 @@
 # ZAVLO
 
-A polished interactive web experience focused on modern technology, visual presentation, and immersive interface design.
+An interactive technology-focused web experience built around visual presentation, motion, 3D elements, and a polished responsive interface.
 
 ## Overview
 
-ZAVLO is an evolving web project built around a strong visual identity and interactive presentation. The goal is to make the website feel like an experience rather than a collection of static sections.
+ZAVLO is an evolving web project intended to make the website feel like an experience rather than a collection of static sections. Its development focuses on strong visual hierarchy, interactive presentation, and motion that supports the way users move through the site.
+
+The implementation is still active, so individual interface and interaction details may change as the project develops.
 
 ## Design Goals
 
@@ -14,28 +16,33 @@ ZAVLO is an evolving web project built around a strong visual identity and inter
 - Responsive web experience
 - Premium dark visual direction
 - Motion used to support navigation and storytelling
+- 3D elements as part of the visual experience
 
 ## Current Status
 
 **Active development.**
 
-The interface and experience are still being refined, so implementation details may change as new sections and interactions are introduced.
+ZAVLO is still being refined. The README therefore describes the project's direction and scope rather than freezing implementation details that may become outdated.
 
-## Documentation
+## Experience and Interaction
 
-Project-specific implementation details should stay close to the relevant source files. This README provides the high-level project context without locking the project into an outdated technical description.
+The project emphasizes the relationship between layout, motion, and visual content. Interactive sections, transitions, and potential 3D elements are treated as part of the presentation rather than isolated effects.
 
 ## Roadmap
 
 Potential refinement areas include:
 
-- 3D visual elements
-- Scroll-driven animation
 - More immersive hero presentation
+- Expanded 3D visual elements
+- Scroll-driven animation
 - Micro-interactions
 - Performance optimization
 - Mobile responsiveness
 - Accessibility improvements
+
+## Documentation
+
+Project-specific implementation details should remain close to the relevant source files. This README provides the stable project context while allowing the implementation to continue evolving.
 
 ## Creator
 
