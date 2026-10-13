@@ -103,6 +103,9 @@
      2. Hero Typography Fade on Scroll
      -------------------------------------------------------------------------- */
   function initHeroScrollEffect() {
+    // Keep the hero static for visitors who request reduced motion.
+    if (isReducedMotion) return;
+
     const heroContent = document.querySelector('.hero-content');
     const scrollIndicator = document.querySelector('.scroll-indicator');
     const heroSection = document.getElementById('hero');
@@ -154,7 +157,7 @@
           const header = document.getElementById('site-header');
           const offset = header ? header.offsetHeight : 72;
           const top = target.getBoundingClientRect().top + window.scrollY - offset;
-          window.scrollTo({ top, behavior: 'smooth' });
+          window.scrollTo({ top, behavior: isReducedMotion ? 'auto' : 'smooth' });
         }
       });
     });
