@@ -55,9 +55,11 @@
 
     if (mobileToggle && navMenu) {
       const closeMenu = () => {
+        const focusWasInsideMenu = navMenu.contains(document.activeElement);
         navMenu.classList.remove('active');
         mobileToggle.setAttribute('aria-expanded', 'false');
         mobileToggle.querySelectorAll('.hamburger-line').forEach(l => l.style.transform = '');
+        if (focusWasInsideMenu) mobileToggle.focus();
       };
 
       mobileToggle.addEventListener('click', (e) => {
@@ -65,6 +67,10 @@
         const isExpanded = mobileToggle.getAttribute('aria-expanded') === 'true';
         mobileToggle.setAttribute('aria-expanded', (!isExpanded).toString());
         navMenu.classList.toggle('active');
+        if (!isExpanded) {
+          const firstLink = navMenu.querySelector('.nav-link');
+          if (firstLink) firstLink.focus();
+        }
 
         const lines = mobileToggle.querySelectorAll('.hamburger-line');
         if (lines.length >= 2) {
